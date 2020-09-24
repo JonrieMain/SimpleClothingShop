@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- link css -->
+	<link rel="stylesheet" href="css/index.css">
+	<!-- /link css -->
+	
+</head>
+<body>
+	<!-- header-container -->
+	<header class="header-container">
+		<h1>Jonrie<span>Clothing</span></h1>
+		<ul class="nav">
+			<li><a  href="#home">Home</a></li>
+			<li><a  href="#product-section">Products</a></li>
+			<li><a  href="#message-section">Contact</a></li>
+		</ul>
+		<img class="open-nav" id="OpenNav" src="images/open.jpg">
+		<img class="close-nav" id="CloseNav" src="images/close.jpg">
+	</header>
+	<!-- /header-container -->
+
+
+	<!-- header-content -->
+	<section class="header-content" id="home">
+		<div class="left-content">
+			<h1>Code<span>Clothing</span></h1>
+			<p>lorem gaff BBC dBm by dBm ng van by km ng FCB BBC km gym mmHg chan's banana than and banana hand banana band banana</p>
+			<a href="#" >Order Now!</a>
+		</div>
+		<div class="right-content">
+			<img src="images/MyPic.jpg">
+		</div>
+	</section>
+	<!-- /header-content -->
+
+
+
+	<!-- product-section -->
+	<section class="product-section" id="product-section">
+
+		<div class="text">
+			<h2>START YOUR <span>ORDER TODAY</span></h2>
+		</div>
+
+		<div class="products">
+			<div class="product1">
+				<img src="images/pic1.jpg">
+				<p>PHP 300.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product2">
+				<img src="images/pic2.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product3">
+				<img src="images/pic3.jpg">
+				<p>PHP 200.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product4">
+				<img src="images/pic4.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product5">
+				<img src="images/pic5.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product6">
+				<img src="images/pic6.jpg">
+				<p>PHP 300.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product7">
+				<img src="images/pic7.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product8">
+				<img src="images/pic8.jpg">
+				<p>PHP 200.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product9">
+				<img src="images/pic9.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product10">
+				<img src="images/pic10.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product11">
+				<img src="images/pic11.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+			<div class="product12">
+				<img src="images/pic12.jpg">
+				<p>PHP 250.00</p>
+				<a class="view-product" href="#" >CLICK TO VIEW DETAILS</a>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- /product-section -->
+
+
+
+	<!-- message-section -->
+	<section class="message-section" id="message-section">
+		<h1><span>Leave</span> Us A Message</h1>
+		<input type="text" placeholder="FitstName">
+		<input type="text" placeholder="LastName">
+		<input type="text" placeholder="Phone">
+		<input type="email" placeholder="Email">
+		<textarea type="text" placeholder="Message"></textarea>
+		<a href="#" >Send</a>
+	</section>
+	<!-- /message-section -->
+
+
+
+	<!-- footer-section -->
+	<footer class="footer">
+		<div class="text1">
+			<p>About</p>
+			<p>FAQ</p>
+			<p>Terms And Conditions</p>
+		</div>
+		<div class="text2">
+			<p>Jonrie<span>Clothing</span></p>
+			<p>www.JonrieClothing.com</p>
+		</div>
+		<div class="text3">
+			<p>Contacts</p>
+			<p>097237482883</p>
+			<p>example.yahoo.com</p>
+		</div>
+		<div class="text4">
+			<p>&copy 2020 Example Project</p>
+		</div>
+	</footer>
+	<!-- /footer-section -->
+
+	<!-- JavaScript -->
+	<script type="text/javascript">
+	window.alert("Source: https://tinyurl.com/JonrieClothing");
+		let OpenNav = document.querySelector("#OpenNav");
+		let CloseNav = document.querySelector("#CloseNav");
+		let NavBar = document.querySelector(".nav");
+		OpenNav.addEventListener('click', () =>{
+			OpenNav.style.display='none';
+			CloseNav.style.display='block'
+			NavBar.style.display='block';
+		});
+		CloseNav.addEventListener('click', () =>{
+			OpenNav.style.display='block';
+			CloseNav.style.display='none';
+			NavBar.style.display='none';
+		});
+	</script>
+	<!-- /JavaScript -->
+</body>
+</html>
