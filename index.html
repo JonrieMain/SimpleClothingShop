@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Document</title>
+	<title>Jonrie Clothing</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- link css -->
 	<link rel="stylesheet" href="css/index.css">
 	<!-- /link css -->
+
+	<link rel="My Icon" type="image/x-icon" href="./images/icon.jpg">
 	
 </head>
 <body>
@@ -18,8 +20,7 @@
 			<li><a  href="#product-section">Products</a></li>
 			<li><a  href="#message-section">Contact</a></li>
 		</ul>
-		<img class="open-nav" id="OpenNav" src="images/open.jpg">
-		<img class="close-nav" id="CloseNav" src="images/close.jpg">
+		<i class="fas fa-bars" id="trigger"></i>
 	</header>
 	<!-- /header-container -->
 
@@ -162,22 +163,27 @@
 	</footer>
 	<!-- /footer-section -->
 
+
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/2a220de282.js" crossorigin="anonymous"></script>
 	<!-- JavaScript -->
 	<script type="text/javascript">
-	window.alert("Source: https://tinyurl.com/JonrieClothing");
-		let OpenNav = document.querySelector("#OpenNav");
+	window.alert("Source: http://www.mediafire.com/file/k60aixgm8ie8n2v/Jonrie_Clothing.rar/file");
+		let OpenNav = document.querySelector("#trigger");
 		let CloseNav = document.querySelector("#CloseNav");
 		let NavBar = document.querySelector(".nav");
 		OpenNav.addEventListener('click', () =>{
-			OpenNav.style.display='none';
-			CloseNav.style.display='block'
+			if(OpenNav.classList.contains("fa-bars")){
+			OpenNav.classList.remove("fa-bars");
+			OpenNav.classList.add("fa-times");
 			NavBar.style.display='block';
+			}else{
+				OpenNav.classList.remove("fa-times");
+				OpenNav.classList.add("fa-bars");
+				NavBar.style.display='none';
+			}
 		});
-		CloseNav.addEventListener('click', () =>{
-			OpenNav.style.display='block';
-			CloseNav.style.display='none';
-			NavBar.style.display='none';
-		});
+		
 	</script>
 	<!-- /JavaScript -->
 </body>

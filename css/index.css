@@ -32,9 +32,6 @@ height: 2rem;
 position: relative;
 width: 100vw;
 height: 5rem;
-/*display: flex;
-align-items: center;
-justify-content: space-around;*/
 background: #000;
 position: fixed;
 z-index: 10000;
@@ -62,12 +59,20 @@ padding: 0 1.2rem;
 .header-container .nav li a{
 color: #fff;
 font-size: 1.3rem;
+transition: 500ms ease-in-out;
 }
-.header-container .open-nav{
-display: none;
+.header-container .nav li a:hover{
+	color: gold;
 }
-.header-container .close-nav{
-display: none;
+/* Burger and Times */
+.header-container #trigger{
+	font-size: 1.5rem;
+	position: fixed;
+	top: 0;
+	right: 2%;
+	display: none;
+	z-index: 10000;
+
 }
 
 /* header-content style */
@@ -313,6 +318,13 @@ grid-template-rows: 1fr 3.5rem;
 grid-template-areas: "text1 text2 text3"
 "text4 text4 text4";
 }
+.footer p{
+	cursor: pointer;
+	transition: 500ms ease-in;
+}
+.footer p:hover{
+	color: gold;
+}
 .footer .text1{
 grid-area: text1;
 display: flex;
@@ -393,6 +405,9 @@ z-index: 10000;
 from{opacity: 0;}
 to{opacity: 1;}
 }
+.header-container #trigger{
+	display: block;
+}
 .header-container .nav li{
 padding: 0;
 }
@@ -407,32 +422,9 @@ transition: 400ms ease-in-out;
 }
 .header-container .nav li a:hover{
 color: #000;
-background: #fff;
+background:rgba(255,255,255, 0.3);
 }
-.header-container .open-nav{
-display: block;
-position: fixed;
-top: .2rem;
-right: .1rem;
-z-index: 3;
-cursor: pointer;
-transition: 400ms ease-in-out;
-}
-.header-container .open-nav:hover{
-opacity: .5;
-}
-.header-container .close-nav{
-display: none;
-position: fixed;
-top: .2rem;
-right: .1rem;
-z-index: 3;
-cursor: pointer;
-transition: 400ms ease-in-out;
-}
-.header-container .close-nav:hover{
-opacity: .5;
-}
+
 
 /* header-content media */
 .header-content{
